@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - The Binding of Isaac</title>
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <header>
+        <h1>The Binding of Isaac - Order Now!</h1>
+    </header>
+    
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="character.html">Characters</a></li>
+            <li><a href="ratings.html">Ratings</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="order-form">
+            <h2>Order Your Copy of The Binding of Isaac</h2>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <label for="name">Name (Required)</label>
+                <div class="centerInput"> 
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <label for="email">Email (Required)</label>
+                <div class="centerInput">
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+
+                <label for="phone">Phone Number (Optional)</label>
+                <div class="centerInput">
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                </div>
+
+                <label for="address">Address (Required)</label>
+                <div class="centerInput">
+                <input type="text" id="address" name="address" placeholder="Your full address" required>
+                </div>
+
+                <label for="shipping">Shipping Method</label>
+                <div class="centerInput">
+                <select id="shipping" name="shipping">
+                    <option value="store">Pick-up at store</option>
+                    <option value="home">Home Delivery</option>
+                    <option value="pickup">Pick-up point</option>
+                </select>
+                </div>
+
+                <label for="quantity">Quantity (Required)</label>
+                <div class="centerInput">
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                </div>  
+
+                <div class="centerInput">
+                <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blomme Timo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
